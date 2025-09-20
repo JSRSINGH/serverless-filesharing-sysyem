@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serverless File Sharing System (Cloud Based)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header and Navigation Bar -->
+  <header>
+    <div class="logo">
+      <h1>Serverless File Sharing System</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#upload-section">Upload</a></li>
+        <li><a href="#download-section">Download</a></li>
+        <li><a href="#about-section">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="upload-section" class="container">
+      <h2>Upload File to Cloud</h2>
+      <label for="fileInput">Choose File:</label>
+      <input type="file" id="fileInput" />
+      <button id="uploadBtn">Upload</button>
+      <p id="status"></p>
+    </section>
+
+    <section id="download-section" class="container">
+      <h2>Download File from Cloud</h2>
+      <label for="downloadInput">Enter Filename:</label>
+      <input type="text" id="downloadInput" placeholder="Enter filename" />
+      <button id="downloadBtn">Download</button>
+      <p id="status"></p>
+    </section>
+
+    <section id="about-section" class="container">
+      <h2>About</h2>
+      <p>This website allows you to upload and download any type of file to/from a cloud-based serverless system. Simply select a file to upload or enter a filename to download it from the cloud.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Serverless File Sharing System. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
